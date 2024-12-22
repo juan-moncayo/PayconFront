@@ -2,9 +2,6 @@
 
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Navbar } from '@/components/navbar'
 import { UserProfile } from '@/components/user-profile'
 import { DeviceList } from '@/components/device-list'
 
@@ -31,13 +28,10 @@ export default function ProfilePage() {
   }
 
   return (
-    <>
-      <Navbar />
-      <div className="container mx-auto mt-8 space-y-8">
-        <UserProfile />
-        <DeviceList />
-      </div>
-    </>
+    <div className="container mx-auto mt-8 space-y-8">
+      <UserProfile />
+      <DeviceList />
+    </div>
   )
 }
 

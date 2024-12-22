@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import { Button } from "@/components/ui/button"
@@ -19,6 +21,9 @@ export function Navbar() {
         <div>
           <Link href="/profile" className="text-white mr-4 hover:text-gray-200">
             Perfil
+          </Link>
+          <Link href="/irrigation" className="text-white mr-4 hover:text-gray-200">
+            Sistema de Riego
           </Link>
           <Button
             onClick={handleLogout}
